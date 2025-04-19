@@ -22,7 +22,7 @@ onMounted(async () => {
 <style lang="scss">
 body {
   margin: 0;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Merriweather', 'Georgia', serif;
   overflow: hidden;
 }
 
@@ -31,34 +31,42 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f5f5f5;
-  padding: 1rem;
+  background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+  padding: 1.5rem;
 }
 
 .quote-box {
-  max-width: 650px;
+  max-width: 700px;
+  width: 100%;
   text-align: center;
-  padding: 2rem;
-  border-radius: 0.25rem;
+  padding: 2.5rem;
+  border-radius: 0.5rem;
   background-color: white;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.quote-box:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .quote-text {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 400;
-  margin-bottom: 1rem;
-  line-height: 1.4;
-  color: #333;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  color: #2d3748;
   
   @media (min-width: 768px) {
-    font-size: 1.75rem;
+    font-size: 2rem;
   }
 }
 
 .quote-credit {
-  font-size: 1rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125rem;
+  font-style: italic;
   font-weight: 500;
-  color: #666;
+  color: #4a5568;
 }
 </style>
