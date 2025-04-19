@@ -6,4 +6,12 @@ export default defineConfig({
   runner: {
     disabled: true,
   },
+  manifest: {
+    "web_accessible_resources": [
+      {
+        "resources": ["assets/*"],
+        "matches": ["<all_urls>"]
+      }
+    ],
+  }
 });
